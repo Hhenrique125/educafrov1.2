@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+
+:root{
+  --color-background:#ffffff/*#4A4947/*#1A1A1D/*#878787*/ ;
+  --color-header_footer:#1e74d5;
+  --color-font-header_footer:#000000;
+  --color-buttons:#78b2f4;
+  --color-font:#050505;
+  --color-button-hover:#78b2f4;
+  --color-button-hover-border:#80b9fb;
+  --color-background-card:#80b9fb;
+  --color-background-card-tittle:#e5f1ff;
+  --font-weight:400;
+  --font-buttons:"poppins", 'sans-serif';
+  --font-titles:"poppins";
+  --font-pg:'rubik';
+}
+
+body {
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    background-color: var(--color-background);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--color-header_footer);
+    padding: 10px 20px;
+}
+.logo_logo{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: var(--font-titles);
+     font-weight: 600;
+     gap: 20px;
+}
+
+.logo_logo i{
+  font-size: 50px;
+  color: var(--color-font);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--color-background) ;
+    font-style: italic;
+}
+.logo p {
+    margin: 0;
+    font-size: 14px;
+   color: var(--color-background);
+    font-family: var(--font-pg);
+    font-weight: 100;
+    font-style: italic;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.list_links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   list-style:none;
+  font-family: var(--font-pg);
+}
+.list_links li a{
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--color-background);
+   transition: 0.2s ease;
+  
+  /*.list_links a:hover{
+   
+}*/
+.list_links a:hover{
+
+  border: 2px solid var(--color-button-hover-border);
+  padding: 10px;
+  background-color: var(--color-button-hover);
+  border-radius: 30px;
+  font-weight: 700;
+  transition: 0.2s ease;
+   color:var(--color-header_footer);  
+  font-weight: 600;
+}
+.list_links  .login, .quiz{
+   display: flex;
+   flex-direction: row-reverse;
+   gap: 10px;
+
+  }
+.list_links .login i, .quiz i{
+  font-size: 25px;
+  color: var(--color-font-header_footer);
+}
